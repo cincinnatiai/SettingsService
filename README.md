@@ -4,7 +4,7 @@ This service manages user-specific configurations and integrates with the Person
 
 ## Architecture
 
-<img width="631" height="359" alt="ServiceSettings drawio" src="https://github.com/user-attachments/assets/4204529b-a4aa-4e20-9cc7-16af8ee6998e" />
+<img width="631" height="360" alt="SettingsService drawio" src="https://github.com/user-attachments/assets/9918480e-dd5c-4b02-933f-158f305d4bc3" />
 
 The system follows a standard three-tier architecture:
 
