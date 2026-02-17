@@ -1,6 +1,6 @@
 # Settings Service
 
-A high-performance microservice designed to manage user-specific configurations and system settings.
+A microservice designed to manage user specific configurations and system settings.
 
 ## Architecture
 
@@ -12,7 +12,7 @@ The system is organized into a modular flow:
 2.  **StartupManager Facade:** Acts as the entry point for orchestration and initial service routing.
 3.  **Edge Layer:** Cloudflare provides security, caching, and request routing.
 4.  **Application Layer (VPC):** A Spring Boot service running within a secure VPC to process business logic.
-5.  **Data Layer:** A local database ensuring high-availability persistence for user settings.
+5.  **Data Layer:** A local database ensuring high availability persistence for user settings.
 
 ## Key Features
 
