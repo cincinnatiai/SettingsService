@@ -4,7 +4,7 @@ A high-performance microservice designed to manage user-specific configurations 
 
 ## Architecture
 
-<img width="631" height="340" alt="SettingsServices drawio" src="https://github.com/user-attachments/assets/9cc34bab-0b3f-4882-96d6-3afaec9629fa" />
+<img width="656" height="340" alt="SettingsService drawio" src="https://github.com/user-attachments/assets/e1ccf552-f4ac-48ba-ae4d-2bf697648cf9" />
 
 The system is organized into a modular flow:
 
