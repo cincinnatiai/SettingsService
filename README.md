@@ -1,19 +1,21 @@
-# SettingsService
+# Settings Service
 
-This service manages user-specific configurations and integrates with the Personalized Menu system.
+A microservice designed to manage user specific configurations and system settings.
 
 ## Architecture
 
-<img width="740" height="255" alt="diagram-export-2-17-2026-1_10_42-PM" src="https://github.com/user-attachments/assets/cb26f8e9-1cfa-4bc7-a23a-7474a411228d" />
+<img width="656" height="340" alt="Settings drawio" src="https://github.com/user-attachments/assets/6dbc87e8-2ef1-4315-b0ed-3ebad1f5c5b3" />
 
-The system follows a standard three-tier architecture:
+The system is organized into a modular flow:
 
-1. **Edge:** Cloudflare handles and routes the request.
-2. **App Layer:** Spring Boot handles business logic.
-3. **Data Layer:** A local database manages persistency.
+1.  **Actor/Client:** Initiates requests via the web, android or iOS app.
+2.  **StartupManager Facade:** Acts as the entry point for orchestration and initial service routing.
+3.  **Edge Layer:** Cloudflare provides security, caching, and request routing.
+4.  **Application Layer (VPC):** A Spring Boot service running within a secure VPC to process business logic.
+5.  **Data Layer:** A local database ensuring high availability persistence for user settings.
 
 ## Key Features
 
-- **Real-time Offers:** Integrates with StartUpManager service to fetch customized settings.
-
-
+- **Request Facade:** Uses a StartupManager to abstract initialization logic from the client.
+- **Secure Environment:** The core service and database are isolated within a Virtual Private Cloud.
+- **Data Consistency:** Reliable persistence using PostgreSQL.
